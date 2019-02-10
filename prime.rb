@@ -15,7 +15,7 @@ end
 
 def array_changer(array, prime_array)
   n = array[0]
-  last = array.[-1]
+  last = array[-1]
   prime_array.push(n)
   if n**2 > last
     prime_array
