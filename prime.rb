@@ -2,32 +2,15 @@
 def prime?(n)
   if n <= 1
     false
-  elsif
-    ary = [2..n]
-    new_ary = array_changer(ary, [])
-    if new_ary includes?(n)
-      true
-    else
-      false
+  else
+    i = 2
+    while i < n
+      if n % i = 0
+        false
+      end
+      i += 1
     end
+    true
   end
 end
 
-def array_changer(array, prime_array)
-  n = array.first
-  last = array.last
-  prime_array.push(n)
-  if n**2 > last
-    prime_array
-  else
-    n_val = n
-    while n < array.last
-      if array.include?(n)
-        array.delete(n)
-      end
-      n += n_val
-    end
-    array_changer(array, prime_array)
-    prime_array
-  end
-end
