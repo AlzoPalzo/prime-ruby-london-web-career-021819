@@ -14,7 +14,7 @@ def prime?(n)
 end
 
 def array_changer(array, prime_array)
-  n = array(0)
+  n = array[0]
   n_sqr = n**2
   prime_array.push(n)
   if n_sqr > array.last
