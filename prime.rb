@@ -7,7 +7,7 @@ def prime?(n)
     new_ary = array_changer(ary, [])
     if new_ary includes?(n)
       true
-    else 
+    else
       false
     end
   end
