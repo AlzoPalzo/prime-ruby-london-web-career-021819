@@ -22,5 +22,6 @@ def array_changer(array, prime_array)
       n += n_val
     end
     array_changer(array, prime_array)
+    prime_array
   end
 end
