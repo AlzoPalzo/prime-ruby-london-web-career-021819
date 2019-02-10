@@ -15,8 +15,9 @@ end
 
 def array_changer(array, prime_array)
   n = array[0]
+  last = array.last
   prime_array.push(n)
-  if n * n > array.last
+  if n * n > last
     prime_array
   else
     n_val = n
