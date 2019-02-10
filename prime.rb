@@ -5,6 +5,11 @@ def prime?(n)
   elsif
     ary = [2..n]
     new_ary = array_changer(ary, [])
+    if new_ary includes?(n)
+      true
+    else 
+      false
+    end
   end
 end
 
