@@ -7,7 +7,7 @@ def prime?(n)
     new_ary = array_changer(ary, [])
     if new_ary includes?(n)
       true
-    else
+    else 
       false
     end
   end
@@ -16,7 +16,8 @@ end
 def array_changer(array, prime_array)
   n = array[0]
   prime_array.push(n)
-  if n**2 > array.last
+  n_sqr = n**2
+  if n_sqr > array.last
     prime_array
   else
     n_val = n
