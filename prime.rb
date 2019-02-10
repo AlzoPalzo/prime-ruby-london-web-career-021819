@@ -2,10 +2,8 @@
 def prime?(n)
   if n <= 1
     false
-  elsif n = 2
-    true
-  else
-    ary = [3..n]
+  elsif
+    ary = [2..n]
     new_ary = array_changer(ary, [])
   end
 end
